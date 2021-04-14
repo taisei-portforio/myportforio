@@ -1,0 +1,198 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
+    <title>Welcome to My Portforio Site!</title>
+    <script type="text/javascript" src="jquery-3.5.0.min.js"></script>
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/8.4.1/firebase-app.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+        https://firebase.google.com/docs/web/setup#available-libraries -->
+    <script src="https://www.gstatic.com/firebasejs/8.4.1/firebase-analytics.js"></script>
+
+    <script>
+    // Your web app's Firebase configuration
+    // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+    var firebaseConfig = {
+        apiKey: "AIzaSyDpGoR6Fm7vPjNME532qfzFKVrH-uqYyKs",
+        authDomain: "portforio-deploy.firebaseapp.com",
+        projectId: "portforio-deploy",
+        storageBucket: "portforio-deploy.appspot.com",
+        messagingSenderId: "808448673514",
+        appId: "1:808448673514:web:440c1cd1cd62858a7bf993",
+        measurementId: "G-5LCZX9E5QN"
+    };
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+    firebase.analytics();
+    </script>
+  </head>
+  <body>
+    <div>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light" role="navigation">
+            <a class="navbar-brand" href="#">MyPortforio</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+ 
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Top</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#profile">Profile</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#outputs">Outputs</a>
+                        <!-- この中にoutlook(今後の展望を入れたい) -->
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#experiences">Experiences</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+    <div class="jumbotron jumbotron-fluid" id="top">
+        <h4 class="display-4 text-white animation">Welcome to my Portforio Site!</h4>
+        <hr class="my-4">
+        <p class="text-white lead">Created by "Taisei Kuwahara".</p>
+    </div>
+
+    <div class="container main" id="profile">
+        <h2><span class="border-bottom border-info">Profile</span></h2>
+        <table class="table table-borderless" id="aboutme">
+            <tr>
+                <td>名前</td>
+                <td>桒原大晴（くわはらたいせい）</td>
+            </tr>
+            <tr>
+                <td>学歴</td>
+                <td>中央大学法学部政治学科3年</td>
+            </tr>
+            <tr>
+                <td>趣味</td>
+                <td>音楽を聴くこと（クラシックにハマってます）</td>
+            </tr>
+            <tr>
+                <td>座右の銘</td>
+                <!-- 座右の銘いる？？？？ -->
+                <td>努力を努力と思わない。</td>
+            </tr>
+        </table>
+        <table class="table table-borderless" id="snsaccount">
+            <tr>
+                <td>Github</td>
+                <td><a href="https://github.com/taisei-portforio">桑原大晴（taisei-portforio）</a></td>
+            </tr>
+            <tr>
+                <td>Facebook</td>
+                <td><a href="https://www.facebook.com/taisei.kuwahara.77/">Taisei Kuwahara</a></td>
+            </tr>
+        </table>
+    </div>
+
+    <div class="container content">
+        <h2><span class="border-bottom border-info title" id="outputs">Outputs(制作物)</span></h2>
+        <div class="card-deck">
+            <div class="card content" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">最新ニュース取得bot</h5>
+                    <p class="card-text">トレンドやニュースをスクレイピングして、lineから入力された文言に合わせて結果を返すというbotを作りました。近いうちにQiitaに詳しい内容を乗せようと思っています。</p>
+                    <p class="card-text">beautifulsoup, flask</p>
+                    <button type="button" class="btn btn-dark"><a href="https://github.com/taisei-portforio/trendaibot">Github</a></button>
+                </div>
+            </div>
+            <div class="card content" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">クイズゲーム</h5>
+                    <p class="card-text">javascriptで作った、簡単な自分に関するクイズゲームを作りました。初めて自分で作ることができた制作物です。</p>
+                    <p class="card-text">HTML/CSS,Javascript</p>
+                    <button type="button" class="btn btn-dark"><a href="https://github.com/taisei-portforio/Quizapp" class="button">Github</a></button>
+                </div>
+            </div>
+            <div class="card content" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">画像投稿アプリ</h5>
+                    <p class="card-text">Twitterのような画像を投稿できるサイトを作りました。今度はこのサイトにログイン機能を搭載しようと考えています。</p>
+                    <p class="card-text">PHP, SQL</p>
+                    <button type="button" class="btn btn-dark"><a href="https://github.com/taisei-portforio/photopostapp" class="button">Github</a></button>
+                </div>
+            </div>
+        </div>
+        <div class="card-deck">
+            <div class="card content" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">競技プログラミング</h5>
+                    <p class="card-text">制作物ではありませんが、競技プログラミングでc++を勉強していました。書いていたc++のコードをgithubに挙げています。
+                    </p>
+                    <p class="card-text">c++</p>
+                    <button type="button" class="btn btn-dark"><a href="https://github.com/taisei-portforio/competitiveprograming" class="button">Github</a></button>
+                </div>
+            </div>
+            <div class="card content" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">ポートフォリオサイト</h5>
+                    <p class="card-text">このサイトです。何か原本があったわけではなく、自分で考えて作ることができました。</p>
+                    <p class="card-text">HTML/CSS, JavaScript</p>
+                    <button type="button" class="btn btn-dark"><a href="https://github.com/taisei-portforio/myportforio" class="button">Github</a></button>
+                </div>
+            </div>
+            <div class="card content" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">犬と猫を画像から見分けるアプリ</h5>
+                    <p class="card-text">このサイトです。何か原本があったわけではなく、自分で考えて作ることができました。そのため多少辺鄙ですが、改良をどんどん加えていきます。</p>
+                    <p class="card-text">Tensorflow</p>
+                    <button type="button" class="btn btn-dark"><a href="https://github.com/taisei-portforio/knownphoto" class="button">Github</a></button>
+                </div>
+            </div>
+        </div>
+        <div class="card-deck">
+            <div class="card content" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">筋トレ管理アプリ</h5>
+                    <p class="card-text">ユーザ登録し、やる内容と時間を登録すると、その時間に通知してくれて筋トレが捗ります。この機能に加えてリコメンド機能も加えたいと思っています。</p>
+                    <button type="button" class="btn btn-dark"><a href="https://github.com/taisei-portforio/kintoreapp" class="button">Github</a></button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="container content">
+        <h2><span class="border-bottom border-info title" id="experiences">Experiences</span></h2>
+        <div class="card-deck">
+            <div class="card content" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">独学でプログラミングを勉強</h5>
+                    <p class="card-text">去年の4月からIT業界、プログラミングに興味を持ち、独学で勉強を始めました。</p>
+                </div>
+            </div>
+        </div>
+        <div class="arrow"></div>
+        <div class="card-deck">
+            <div class="card content" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">インターンシップに参加</h5>
+                    <p class="card-text">去年の6月に「TECHBASE」という二か月の長期インターンシップに参加しました。</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,91 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+#top {
+    background-image: url("../img/Azur Lane.jpg");
+    background-size: cover;
+    text-align: center;
+    position: relative;
+    height: 80vh;
+    min-height: 300px;
+    padding-top: 200px;
+}
+
+#share {
+    padding-top: 100px;
+}
+
+.main {
+    text-align: center;
+}
+
+#aboutme {
+    margin: auto;
+    width: 0px;
+}
+
+#snsaccount {
+    margin: 100px auto;
+    width: 0px;
+}
+
+.star {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.star2 {
+    margin-top: 60px;
+    margin-bottom: 30px;
+}
+
+.button {
+    text-decoration: none;
+    color: white;
+}
+
+.button:hover {
+    color: white;
+    text-decoration: none;
+}
+
+.card-img-top {
+    max-width: 100%;
+    flex-shrink: 0;
+}
+
+.content {
+    text-align: center;
+    margin: 80px auto;
+}
+
+.title {
+    margin-bottom: 50px;
+}
+
+.arrow {
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    margin: 0 10px;
+    border-bottom: 4px solid #17a2b8;
+    border-right: 4px solid #17a2b8;
+    transform: rotate(45deg);
+    margin-top: 30px;
+  }
+
+
+/* about me 
+    創作物
+    経験（プログラミングを始めたきっかけ）
+    please share!
+    About
+    How come?
+    
+*/
